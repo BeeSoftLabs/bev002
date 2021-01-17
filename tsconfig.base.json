@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@bev002/api/core/data-access": [
+        "libs/api/core/data-access/src/index.ts"
+      ],
+      "@bev002/api/listing/feature": ["libs/api/listing/feature/src/index.ts"],
+      "@bev002/api/core/feature": ["libs/api/core/feature/src/index.ts"],
+      "@bev002/api/listing/data-access": [
+        "libs/api/listing/data-access/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

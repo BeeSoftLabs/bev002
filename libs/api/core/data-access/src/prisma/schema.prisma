@@ -11,13 +11,13 @@ generator client {
 }
 
 model Listing {
-  id String @id @default(cuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-  title String
-  text String
-  type ListingType
-  price Int
+  id        String      @id @default(cuid())
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @default(now()) @updatedAt
+  title     String
+  text      String
+  type      ListingType
+  price     Int
 }
 
 enum ListingType {
